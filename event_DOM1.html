@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+div {
+	padding: 30px;
+}
+#orange {
+	width: 300px;
+	background-color: orange;
+}
+#green {
+	background-color: limeGreen;
+}
+#blue {
+	background-color: cyan;
+}	
+	
+</style>
+<script>
+//Create Alert functions and bind to elements
+window.onload = function() {
+		document.getElementById("blue").onclick = function () {
+		alert("Blue Block was clicked");
+		}
+}
+</script>
+<body>
+<div id="orange">
+	<div id="green">
+		<div id="blue" onclick="myBlue();">Click here</div>
+	</div>
+</div>
+</body>
+</html>
